@@ -1,5 +1,3 @@
-// app/components/AgeCalculatorApp.tsx
-
 "use client";
 
 import { useState } from "react";
@@ -51,8 +49,8 @@ const AgeCalculatorApp = () => {
       errors.year = "Must be a valid year";
     }
 
-    setErrors(errors as Errors); // Явно вказуємо, що це Errors
-    return Object.keys(errors).length === 0; // Перевіряємо, чи не залишилися помилки
+    setErrors(errors as Errors);
+    return Object.keys(errors).length === 0; 
   };
 
   const calculateAge = () => {
